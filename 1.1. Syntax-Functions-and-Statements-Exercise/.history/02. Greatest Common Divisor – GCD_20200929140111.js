@@ -10,9 +10,7 @@ function solve(num, num2) {
     }
   }
 
- console.log(Math.max(...arr))
-
-
+  console.log(Math.max(...arr))
 
 }
 

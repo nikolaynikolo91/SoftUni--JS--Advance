@@ -1,15 +1,15 @@
 function solve (input) {
-let str = input + "";
+let str = input + ""
     let sameNumber = str.split('');
     let filterArr = sameNumber.filter((a) => a != sameNumber[0]);
 
     if (filterArr.length === 0){
-        console.log('true');
+        console.log('true')
     } else {
-        console.log('false');
+        console.log('false')
     }
 
-    let total = sameNumber.reduce((a,b)=> Number(a)+Number(b));
+    let total = sameNumber.reduce((a,b)=> Number(a)+Number(b))
     console.log(total)
 }
 

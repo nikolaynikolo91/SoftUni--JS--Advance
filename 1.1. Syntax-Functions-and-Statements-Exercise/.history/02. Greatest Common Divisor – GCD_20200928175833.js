@@ -1,8 +1,6 @@
 function solve(num, num2) {
   let arr = [];
-  let smallestNum = Math.min(num, num2);
-
-  for (let i = 1; i <= smallestNum; i++) {
+  for (let i = 1; i <= 9; i++) {
     let sumFirst = num % i;
     let sumSecond = num2 % i;
     if (sumFirst === 0 & sumSecond === 0) {
@@ -10,9 +8,7 @@ function solve(num, num2) {
     }
   }
 
- console.log(Math.max(...arr))
-
-
+  console.log(Math.max(...arr))
 
 }
 
