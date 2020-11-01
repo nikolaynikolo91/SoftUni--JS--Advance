@@ -1,5 +1,0 @@
-
-
-
-
-(Number(result(1)))
