@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MY super HTML</title>
+  </head>
+  <body>
+    <div class="content"></div>
+
+    <script>
+      let myDIv = document.getElementsByTagName("div")[0];
+      //myDIv.textContent = `<strong>Pesho<//strong>`;
+      let par = document.createElement("p");
+      par.textContent = `loren ipsum`;
+      myDIv.appendChild(par);
+    </script>
+  </body>
+</html>
