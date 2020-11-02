@@ -1,17 +1,18 @@
 function createArticle() {
-  let title$ = document.getElementById("createTitle");
-  let content$ = document.getElementById("createContent");
-  let articles$ = document.getElementById("articles");
+  let $titleInput = document.getElementById("createTitle");
+  let $contenInput = document.getElementById("createContent");
+  let $articles = document.getElementById("articles");
 
-  if (title$.value !== "" && content$.value !== "") {
+  if ($titleInput.value != "" && $contenInput.value != "") {
     let article = document.createElement("article");
+    $articles.appendChild(article);
     let head = document.createElement("h3");
-    head.textContent = title$.value;
     let p = document.createElement("p");
-    p.textContent = content$.value;
-
+    head.innerHTML = $titleInput.value;
+    p.innerHTML = $contenInput.value;
     article.appendChild(head);
     article.appendChild(p);
-    articles$.appendChild(article);
+    $titleInput.value = "";
+    $contenInput.value = "";
   }
 }
